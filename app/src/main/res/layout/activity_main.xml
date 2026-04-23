@@ -3,70 +3,114 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
-    
     <EditText
         android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:hint="숫자 입력"
-        android:inputType="numberDecimal"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
+        android:hint="숫자1 입력"/>
     <EditText
         android:id="@+id/edit2"
-        android:layout_marginBottom="10dp"
-        android:hint="숫자 입력"
-        android:inputType="numberDecimal"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn_pl"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:text="더하기"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn_mi"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:text="빼기"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="숫자1 입력"/>
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/btn_0"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="4"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="5"/>
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="6"/>
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="7"/>
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="8"/>
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="9"/>
+        </TableRow>
+    </TableLayout>
     <Button
-        android:id="@+id/btn_mu"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:text="곱하기"
+        android:id="@+id/btn_plus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="더하기"/>
     <Button
-        android:id="@+id/btn_di"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:text="나누기"
+        android:id="@+id/btn_minus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="빼기"/>
     <Button
-        android:id="@+id/btn_mo"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:text="나머지"
+        android:id="@+id/btn_multiply"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="곱하기"/>
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="나누기"/>
+    <TextView
+        android:id="@+id/text_result"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/txt"
-            android:text="계산 결과:"
-            android:textColor="#E91E63"
-            android:textSize="50dp"
-            android:layout_marginBottom="@dimen/small_margin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        android:gravity="bottom"
+        android:layout_marginBottom="15dp"
+        android:text="계산 결과:"/>
 </LinearLayout>
